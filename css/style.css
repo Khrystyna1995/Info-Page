@@ -1,0 +1,410 @@
+body {
+    background: linear-gradient(94deg,  #000a25, #651429d1);
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    text-align: center;
+    border-bottom: 2px solid #c52d2d;
+}
+h2 a{
+    color: white;
+    font-size: 30px;
+
+}
+a {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+}
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.center {
+    text-align: center;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+.banner {
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 214px;
+    padding-bottom: 285px;
+}
+.title {
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+.description {
+    font-size: 45px;
+    line-height: 30px;
+    max-width: 570px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/*Weather*/
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.header_weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+.header_weather input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid #df3431;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: width 0.4s ease-in-out;
+}
+
+.header_weather input:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.current .temp {
+    color: #FFF;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+    font-weight: 500;
+}
+
+.current .weather {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.4);
+}
+
+/*Exchange rate*/
+
+.exchange_rate{
+
+}
+
+.exchange_course-privatbank {
+    margin: 0 auto;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+    border: 3px solid #b32c31;
+    width: 306px;
+
+}
+h4{
+    color: white;
+}
+.leftimg{
+    float: left;
+    margin: 7px 7px 7px 7px;
+    width: 15% ;
+    height: 15%;
+}
+table {
+    text-align: left;
+    border-spacing: 5px;
+    border-radius: 15px;
+}
+th, tr{
+    color: white;
+}
+
+/*Clock*/
+
+.clock_body{
+    height: 500px;
+    overflow: hidden;
+
+}
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 33%;
+    margin-top: 25%;
+}
+.clock{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 250px;
+    border: 3px solid #ed404f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.clock:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.num{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+
+}
+.num1{
+    transform: rotate(30deg);
+}
+.num1 div{
+    transform: rotate(-30deg);
+}
+.num2{
+    transform: rotate(60deg);
+}
+.num2 div{
+    transform: rotate(-60deg);
+}
+.num3{
+    transform: rotate(90deg);
+}
+.num3 div{
+    transform: rotate(-90deg);
+}
+.num4{
+    transform: rotate(120deg);
+}
+.num4 div{
+    transform: rotate(-120deg);
+}
+.num5{
+    transform: rotate(150deg);
+}
+.num5 div{
+    transform: rotate(-150deg);
+}
+.num6{
+    transform: rotate(180deg);
+}
+.num6 div{
+    transform: rotate(-180deg);
+}
+.num7{
+    transform: rotate(210deg);
+}
+.num7 div{
+    transform: rotate(-210deg);
+}
+.num8{
+    transform: rotate(240deg);
+}
+.num8 div{
+    transform: rotate(-240deg);
+}
+.num9{
+    transform: rotate(270deg);
+}
+.num9 div{
+    transform: rotate(-270deg);
+}
+.num10{
+    transform: rotate(300deg);
+}
+.num10 div{
+    transform: rotate(-300deg);
+}
+.num11{
+    transform: rotate(330deg);
+}
+.num11 div{
+    transform: rotate(-330deg);
+}
+.hand{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hand div{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+}
+.sec{
+    width: 1px;
+    height: 40%;
+}
+.min{
+    height: 38%;
+    width: 4px;
+    border-radius: 2px;
+}
+.hour{
+    height: 28%;
+    width: 8px;
+    border-radius: 4px;
+}
+
+/*Calculator*/
+
+.calculatrice{
+    width: 250px;
+    height: 400px;
+    padding: 10px 20px;
+    border: 5px solid #dd4861;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 auto;
+
+}
+.screen{
+    background: none;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 5px solid #ed3838;;
+    border-radius: 4px;
+    color: #010b25;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+.bn{
+    outline: none;
+    width:55px;
+    height:55px;
+    margin: 2px;
+    padding: 9px;
+    background: none;
+    border: 5px solid #72202b;
+    border-radius: 4px;
+    color: #010b25;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.bn:hover{
+    transform: scale(1.08);
+    transition: .5s;
+}
+
+
+
